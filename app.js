@@ -17,7 +17,7 @@ async function upload(req, res, next) {
       const body = await db.payload(i);
       console.log(body)
       await axios
-        .post("https://citrastore.co.id/whatisthis/servs", body, options)
+        .post("https://citrastore.co.id/whatisthis/posv", body, options)
         .then((response) => {
           console.log(response.data);
           
