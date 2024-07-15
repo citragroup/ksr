@@ -13,7 +13,7 @@ async function upload(req, res, next) {
         },
       };
   
-      const body = await db.server();
+      const body = await db.payload();
       console.log(body)
     //   await axios
     //     .post("https://citrastore.co.id/whatisthis/servs", body, options)
@@ -25,9 +25,12 @@ async function upload(req, res, next) {
             
     //       console.log(error);
     //     });
+    await db.close();
     } catch (e) {
-      console.log("Error");
+      console.log(e);
       
     }
   }
+
+  upload()
   
