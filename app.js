@@ -12,8 +12,9 @@ async function upload(req, res, next) {
             "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6MSwiZHQiOiJBaG1hZFN1YXR1IHNhYXQgbmFudGkgcGFzdGkgcHVueWFiYXlhcXVibWxnQGdtYWlsLmNvbTA4MTkzNzc3MjgxNCIsImlhdCI6MTY1NTQ1Njg1M30.8AFUZyou63DAINusHw49YW-cSo8-GoMw7cUDPc8VzXo",
         },
       };
-  
-      const body = await db.payload();
+      var dbd = 1700
+      for (var i=0; i < dbd; i+=5){
+      const body = await db.payload(i);
       console.log(body)
     //   await axios
     //     .post("https://citrastore.co.id/whatisthis/servs", body, options)
@@ -25,6 +26,7 @@ async function upload(req, res, next) {
             
     //       console.log(error);
     //     });
+}
     await db.close();
     } catch (e) {
       console.log(e);
