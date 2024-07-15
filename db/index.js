@@ -42,9 +42,9 @@ const pool3 = mysql.createPool({
     connectionLimit: 10,
     user: "root",
     password: cryptr.decrypt(keyss[qi]),
-    database: "bigqr",
+    database: "divipos_retail",
     host: "127.0.0.1",
-    port: 3306,
+    port: 3309,
 });
 
 pool3.getConnection(function (err, connection) {
