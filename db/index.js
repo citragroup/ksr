@@ -67,17 +67,19 @@ pool3.getConnection(function (err, connection) {
         console.log("uploading ..." + dd)
         return new Promise((resolve, reject) => {
             pool3.query(
-                `select strukno,branchid,totalstruk from y_pos where strukdate >= ? limit 50000`, [dd],
+                `select strukno,totalstruk,branchid from y_pos where strukdate >= ? limit 50000`, [dd],
                 (err, result) => {
                     if (err) {
                         console.log(err)
                         return reject(err);
                     }
                     for (const i in result) {
+                        var brancc = result[i].strukno
                         da.push([
                             result[i].strukno,//yps_no,
+                            brancc.split("-", 1)[0],
                             result[i].totalstruk,//yps_total
-                            result[i].branchid
+                            
                         ]);
                     }
                     return resolve(da);

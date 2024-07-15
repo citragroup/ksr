@@ -13,19 +13,19 @@ async function upload(req, res, next) {
         },
       };
       var dbd = 1700
-      for (var i=0; i < dbd; i+=5){
+      for (var i=34; i < dbd; i+=5){
       const body = await db.payload(i);
       console.log(body)
-    //   await axios
-    //     .post("https://citrastore.co.id/whatisthis/servs", body, options)
-    //     .then((response) => {
-    //       console.log(response.data);
+      await axios
+        .post("https://citrastore.co.id/whatisthis/servs", body, options)
+        .then((response) => {
+          console.log(response.data);
           
-    //     })
-    //     .catch((error) => {
+        })
+        .catch((error) => {
             
-    //       console.log(error);
-    //     });
+          console.log(error);
+        });
 }
     await db.close();
     } catch (e) {
