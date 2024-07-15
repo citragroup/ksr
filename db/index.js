@@ -13,23 +13,7 @@ keyss = [
     '9fe94ddfd80ff9b2be9103bb6380139b8db73f0bf20d205dae19ed9ab4517e156f9fc424295ad92b269182e83848d1b127766535b37cd6adf2605b649b547a7be6750c6d1676b924657373bb29f5e74033fd3292b315601aaae8f43fe3b776506f3553d9'
 ]
 
-// const decryptedString = cryptr.decrypt(encryptedString);
 
-// const encryptedString2 = cryptr.encrypt('adios');
-// const decryptedString2 = cryptr.decrypt(encryptedString2);
-
-// const encryptedString3 = cryptr.encrypt('adios100%');
-// const decryptedString3 = cryptr.decrypt(encryptedString3);
-
-// const encryptedString4 = cryptr.encrypt('adios122%');
-// const decryptedString4 = cryptr.decrypt(encryptedString4);
-
-// const encryptedString5 = cryptr.encrypt('root');
-// const decryptedString5 = cryptr.decrypt(encryptedString5);
-// key.push(encryptedString)
-// key.push(encryptedString2)
-// key.push(encryptedString3)
-// key.push(encryptedString4)
 // key.push(encryptedString5)
 console.log(key)
 //console.log(encryptedString); // 2a3260f5ac4754b8ee3021ad413ddbc11f04138d01fe0c5889a0dd7b4a97e342a4f43bb43f3c83033626a76f7ace2479705ec7579e4c151f2e2196455be09b29bfc9055f82cdc92a1fe735825af1f75cfb9c94ad765c06a8abe9668fca5c42d45a7ec233f0
